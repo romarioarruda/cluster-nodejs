@@ -12,3 +12,6 @@ Testar e utilizar melhores formas de executar algum processo em Node.js.
 #### Docs do Node cluster
 
 https://nodejs.org/api/cluster.html#cluster_cluster
+
+#### Docs do Node stream
+https://nodejs.org/api/stream.html
