@@ -1,12 +1,13 @@
-#### cluster-nodejs
+#### nodejs-cases
 
-Testando o uso de cpu pra distribuir processos em cluster numa mesma máquina.
+Testando casos de uso com node.js
 
 #### Objetivo
 
-Usar da melhor forma os recursos da máquina
+Testar e utilizar melhores formas de executar algum processo em Node.js.
 
 
+#### Cases testados
 
 #### Docs do Node cluster
 
