@@ -27,4 +27,4 @@ $ npm run client
 
 **Material de apoio**
 
-* https://www.youtube.com/watch?v=G8_Feca_9U0
+* https://www.youtube.com/watch?v=r-33Hhbvr1M

@@ -9,6 +9,9 @@ Testar e utilizar melhores formas de executar algum processo em Node.js.
 
 #### Cases testados
 
+* Cluster
+* Streams
+
 #### Docs do Node cluster
 
 https://nodejs.org/api/cluster.html#cluster_cluster
