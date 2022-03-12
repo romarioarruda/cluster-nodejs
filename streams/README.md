@@ -17,7 +17,7 @@ $ npm run server
 
 ##
 
-**Consumindo os dados com um cliet**:
+**Consumindo os dados com um client**:
 
 ```
 $ npm run client
