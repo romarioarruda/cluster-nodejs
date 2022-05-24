@@ -36,3 +36,8 @@ Parâmetros do comando autocannon
 --latency indica que queremos saber sobre tempo de execução por segundos
 ```
 
+##
+
+**Links úteis**
+- https://nodejs.org/api/cluster.html#cluster_cluster
+- https://nodejs.org/api/process.html#process
