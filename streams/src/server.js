@@ -15,7 +15,7 @@ function* run() {
 }
 
 
-function handler(req, resp) {
+function handler(_req, resp) {
   const readable = new Readable({
     read() {
       for(const data of run()) {
