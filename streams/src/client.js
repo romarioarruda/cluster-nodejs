@@ -20,7 +20,8 @@ const stream = await consume()
 stream
   .pipe(
     new Transform({
-      transform(chunk, encode, cb) {
+      objectMode: true, //Trocando padrão de buffer para strings
+      transform(chunk, _encode, cb) {
         const item = JSON.parse(chunk)
         const number = /\d+/.exec(item.name)[0]
         let name = item.name
@@ -30,16 +31,19 @@ stream
 
         item.name = name
 
-        cb(null, JSON.stringify(item))
+        cb(null, JSON.stringify(item) + ',\n')
       }
     })
   )
-  .pipe(
-    new Writable({
-      write(chunk, encode, cb) {
-        const data = chunk.toString()
-        createWriteStream('./src/result.txt', { flags: 'a' }).write(data + "\n")
-        cb()
-      }
-    })
-  )
+  .pipe(createWriteStream('./src/result.txt', { flags: 'a' }))
+
+  
+  // .pipe(
+  //   new Writable({
+  //     objectMode: true, //Trocando padrão de buffer para strings
+  //     write(chunk, _encode, cb) {
+  //       createWriteStream('./src/result.txt', { flags: 'a' }).write(chunk + "\n")
+  //       return cb()
+  //     }
+  //   })
+  // )
